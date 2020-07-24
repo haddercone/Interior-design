@@ -1,0 +1,172 @@
+body
+{
+    box-sizing: border-box;
+    color: #f3f3f3;
+    margin: 0 5% ;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(24,23,25);
+}
+.nav{
+    /* margin: 0 10%; */
+    display: grid;
+    grid-template-columns:25% 75%;
+}
+
+.nav .title .title-d
+{
+    border: 1px solid #f3f3f3;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+
+.navigation ul
+{
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+.navigation ul li{
+
+    display: inline;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #f3f3f3;
+    /* display: inline; */
+    padding: 10px 20px;
+}
+
+.menu-button
+{
+    display: none;
+}
+
+.main-wrapper
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.image img{
+    width: 70%;
+}
+.text-container
+{
+    padding-left: 20px;
+}
+.text-container .text
+{
+    width: 50%;
+}
+.text-container a{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+.text-container a:hover
+{
+    transition: .5s;
+    color: red;
+    transform: translateX(20px);
+}
+.text-container  h1
+{
+    font-size: 2rem;
+    margin: 0;
+}
+.about
+{
+    position: relative;
+    left: 20%;
+    bottom: 16%;
+    padding: 10px;
+    width: 45%;
+    display: grid;
+    background-color: rgb(24,23,25);
+    grid-template-columns: 33% 67%;
+    align-items: center;
+
+}
+.sal
+{
+    font-size: 1.5rem;
+    grid-column: 1/3;
+}
+.about img
+{
+    width: 75%;
+    align-self: center;
+    border-radius: 50%;
+}
+.footer
+{
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:600px)
+{
+    .about{
+        width: 80%;
+        align-items: center;
+        left: 0;
+        bottom: 80px;
+        padding: 10px;
+        margin: 10%;
+
+    }
+    .main-wrapper{
+        display: block;
+    }
+    .text-container{
+        padding: 0 20px 20px 20px;
+    }
+    .text-container .text, .image img{
+        width: 100%;
+    }
+    .nav{
+        display: block;
+    }
+    .nav .title{
+        text-align: left;
+    }
+    .navigation ul li a{
+
+        display: block;
+        padding: 20px;
+    }
+    .navigation ul li a:hover{
+        background-color: #5c5c5c;
+    }
+    .navigation
+    {
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #2e2e2e;
+        height: 100vh;
+        display: none;
+        align-items: center;
+
+    }
+    .image{
+        padding: 20px;
+    }
+    
+    .menu-button
+    {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        padding: 7px 15px;
+        background-color: rgb(24,23,25);
+        color: #f3f3f3;
+        border: 1px solid #f3f3f3; 
+        outline: none;   
+    }
+    .menu-button:hover{
+        background: #5c5c5c;
+    }
+}
